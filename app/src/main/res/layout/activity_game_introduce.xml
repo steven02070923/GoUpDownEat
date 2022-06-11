@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameIntroduce"
+    android:background="@android:color/holo_blue_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="遊戲說明"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="點擊向上移動，吃水果加分，碰到東泉辣椒遊戲結束。遊戲目標2500分通關。"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:gravity="center"
+            android:paddingLeft="5dp">
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/black" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="+50分"
+                android:textSize="30sp" />
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/yellow" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="+50分"
+                android:textSize="30sp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/purple" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="-100分"
+                android:textSize="30sp"
+                />
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/blue" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="-500分"
+                android:textSize="30sp"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/red" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="遊戲結束"
+                android:textSize="30sp"
+                />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:onClick="BackStart"
+        android:text="回前頁"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+</LinearLayout>
